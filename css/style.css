@@ -1838,3 +1838,51 @@ background: none;}
   .company dd { margin: 0; font-size: 16px; }
   @media (max-width: 860px) { .company { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 560px) { .company { grid-template-columns: 1fr; } }
+
+  /* ===== Právne stránky (Ochrana osobných údajov, Obchodné podmienky) ===== */
+  .legal-hero { min-height: 52vh; min-height: 52svh; }
+  .legal-hero .h-xl { font-size: clamp(40px, 6vw, 88px); max-width: none; }
+  .legal-hero .media::after { display: none; }
+  .legal-wrap { max-width: 860px; }
+  .legal-meta {
+    font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--red); margin: 0 0 16px;
+  }
+  .legal-draft {
+    padding: 14px 18px; margin: 0 0 32px;
+    border: 1px dashed var(--red); color: var(--red-dark); font-size: 14px;
+  }
+  .legal-intro { font-size: clamp(17px, 1.4vw, 19px); color: var(--grey-700); margin-bottom: 8px; }
+  .legal-section { padding: 40px 0 8px; border-top: 1px solid var(--grey-300); margin-top: 40px; }
+  .legal-section h2 { font-size: clamp(22px, 2.2vw, 28px); margin-bottom: 18px; }
+  .legal-section p { color: var(--grey-700); }
+  .legal-section strong { color: var(--ink); font-weight: 600; }
+
+  .legal-facts, .legal-block dl { margin: 0 0 20px; }
+  .legal-facts div, .legal-block dl div {
+    display: grid; grid-template-columns: 190px 1fr; gap: 16px;
+    padding: 12px 0; border-bottom: 1px solid var(--grey-300);
+  }
+  .legal-facts dt, .legal-block dt {
+    font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--grey-500); padding-top: 3px;
+  }
+  .legal-facts dd, .legal-block dd { margin: 0; color: var(--ink); }
+
+  .legal-block { margin: 28px 0 0; padding: 26px 28px 10px; background: var(--grey-100); }
+  .legal-block h3 { font-size: 18px; margin-bottom: 8px; }
+  .legal-block dl div { border-color: rgba(0,0,0,.08); }
+  .legal-block dl div:last-child { border-bottom: 0; }
+
+  .legal-list { list-style: none; padding: 0; margin: 0 0 20px; }
+  .legal-list li { position: relative; padding: 8px 0 8px 26px; color: var(--grey-700); }
+  .legal-list li::before {
+    content: ""; position: absolute; left: 0; top: 20px; width: 12px; height: 2px; background: var(--red);
+  }
+  .legal-nowrap { white-space: nowrap; }
+  .legal-back { margin-top: 48px; }
+
+  @media (max-width: 560px) {
+    .legal-facts div, .legal-block dl div { grid-template-columns: 1fr; gap: 2px; }
+    .legal-block { padding: 22px 18px 6px; }
+  }
