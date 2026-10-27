@@ -76,17 +76,34 @@
   });
 
   /* ---------- Scroll reveal ---------- */
+  // Legal pages: text blocks stay hidden until the first scroll, then fade in one by one
+  var legalEls = document.querySelectorAll(".legal-wrap > p, .legal-section > *");
+  legalEls.forEach(function (el) { el.classList.add("reveal", "reveal-legal"); });
+
   var revealEls = document.querySelectorAll(".reveal, .reveal-img");
   if ("IntersectionObserver" in window && !reduceMotion) {
     var io = new IntersectionObserver(function (entries) {
+      var step = 0;
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
+          if (entry.target.classList.contains("reveal-legal")) {
+            entry.target.style.setProperty("--delay", (step++ * 150) + "ms");
+          }
           entry.target.classList.add("is-visible");
           io.unobserve(entry.target);
         }
       });
     }, { threshold: 0.15, rootMargin: "0px 0px -60px 0px" });
-    revealEls.forEach(function (el) { io.observe(el); });
+    revealEls.forEach(function (el) {
+      if (!el.classList.contains("reveal-legal")) io.observe(el);
+    });
+
+    var observeLegal = function () {
+      window.removeEventListener("scroll", observeLegal);
+      legalEls.forEach(function (el) { io.observe(el); });
+    };
+    if (window.scrollY > 0) observeLegal();
+    else window.addEventListener("scroll", observeLegal, { passive: true });
   } else {
     revealEls.forEach(function (el) { el.classList.add("is-visible"); });
   }
