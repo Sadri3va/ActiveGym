@@ -1135,6 +1135,7 @@ body.is-loaded .hero-fade { opacity: 1; transform: none; }
   font-size: 13px;
   color: var(--grey-500);
 }
+.footer-credit { white-space: nowrap; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1080px) {
@@ -1885,4 +1886,24 @@ background: none;}
   @media (max-width: 560px) {
     .legal-facts div, .legal-block dl div { grid-template-columns: 1fr; gap: 2px; }
     .legal-block { padding: 22px 18px 6px; }
+  }
+  /* ===== Pätička: autor webu ===== */
+  .footer-credit {
+    display: inline-block;
+    margin-left: 12px;
+    padding-left: 12px;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .footer-credit strong {
+    color: var(--grey-300);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  @media (max-width: 560px) {
+    .footer-credit {
+      display: block;
+      margin: 8px 0 0;
+      padding-left: 0;
+      border-left: 0;
+    }
   }
