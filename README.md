@@ -1,8 +1,8 @@
 # ACTIVE GYM — webová stránka
 
-Statický web samoobslužného fitka ACTIVE GYM Levice.
+Business web samoobslužného fitka ACTIVE GYM Levice.
 
-Web: [activegym.sk](https://activegym.sk/)
+Link: [activegym.sk](https://activegym.sk/)
 
 - Slovenská verzia: hlavný priečinok
 - Anglická verzia: priečinok `en/`
