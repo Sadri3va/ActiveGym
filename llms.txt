@@ -50,9 +50,9 @@ Registration is only possible in person, never online or in the app. Renewals ar
 
 ## Pages
 
-- [Home (SK)](https://activegym.sk/): overview, facilities, opening hours
-- [Členstvo / Membership](https://activegym.sk/clenstvo) ([EN](https://activegym.sk/en/membership)): prices, what's included, FAQ
-- [Ako sa stať členom / How to join](https://activegym.sk/ako-sa-stat-clenom) ([EN](https://activegym.sk/en/how-to-join)): registration steps, gym rules, quiet hours
-- [Aplikácia / App](https://activegym.sk/aplikacia) ([EN](https://activegym.sk/en/app)): app features and FAQ
-- [Kontakt / Contact](https://activegym.sk/kontakt) ([EN](https://activegym.sk/en/contact)): address, map, opening hours, contact details
-- [Ochrana osobných údajov / Privacy policy](https://activegym.sk/ochrana-osobnych-udajov) ([EN](https://activegym.sk/en/privacy-policy))
+- [Home (SK)](https://www.activegym.sk/): overview, facilities, opening hours
+- [Členstvo / Membership](https://www.activegym.sk/clenstvo) ([EN](https://www.activegym.sk/en/membership)): prices, what's included, FAQ
+- [Ako sa stať členom / How to join](https://www.activegym.sk/ako-sa-stat-clenom) ([EN](https://www.activegym.sk/en/how-to-join)): registration steps, gym rules, quiet hours
+- [Aplikácia / App](https://www.activegym.sk/aplikacia) ([EN](https://www.activegym.sk/en/app)): app features and FAQ
+- [Kontakt / Contact](https://www.activegym.sk/kontakt) ([EN](https://www.activegym.sk/en/contact)): address, map, opening hours, contact details
+- [Ochrana osobných údajov / Privacy policy](https://www.activegym.sk/ochrana-osobnych-udajov) ([EN](https://www.activegym.sk/en/privacy-policy))

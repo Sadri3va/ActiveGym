@@ -15,4 +15,4 @@ User-agent: Applebot-Extended
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://activegym.sk/sitemap.xml
+Sitemap: https://www.activegym.sk/sitemap.xml
