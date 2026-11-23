@@ -1899,6 +1899,8 @@ background: none;}
     font-weight: 600;
     letter-spacing: 0.02em;
   }
+  .footer-credit a strong { transition: color 0.4s var(--ease); }
+  .footer-credit a:hover strong { color: var(--red); }
   @media (max-width: 560px) {
     .footer-credit {
       display: block;
